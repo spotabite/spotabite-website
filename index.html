@@ -5,49 +5,62 @@
 	<title>Spot A Bite</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body, html {
+    html {
       margin: 0;
       padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     article {
+      width: 100%;
+      max-width: 540px;
+      padding: 5%;
       display: flex;
       flex-direction: column;
       text-align: center;
-      gap: 50px;
-      width: 400px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      gap: 35px;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
     }
-    
-    .logo {
 
+    .logo, .title {
+      width: 100%;
+      height: auto;
     }
 
     .subtitle {
+      width: 50%;
+      height: auto;
+    }
 
+    .tail {
+      width: 85%;
+      height: auto;
     }
   </style>
 </head>
 <body>
   <article>
-    <div class="logo">
-      <img src="./img/logo.png" alt="Hungry cat face with big open mouth" class="logo" width="400" height="auto" />
-    </div>
+    <img src="./img/logo.png" alt="Hungry cat face with big open mouth" class="logo" />
 
-    <div>
-      <img src="./img/title.png" alt="Spot A Food" width="400" height="auto" />
-    </div>
+    <img src="./img/title.png" alt="Spot A Food" class="title" />
 
-    <div>
-      <img src="./img/coming-soon.png" alt="Coming soon" width="200" height="auto" />
-    </div>
+    <img src="./img/coming-soon.png" alt="Coming soon" class="subtitle" />
 
-    <div class="tail">
-      <img src="./img/tail.gif" alt="Swinging cat tail" width="350" height="auto" />
-    </div>
+    <img src="./img/tail.gif" alt="Swinging cat tail" class="tail" />
   </article>
 </body>
 </html>
